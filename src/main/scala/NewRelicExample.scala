@@ -21,7 +21,7 @@ object NewRelicExample extends App with SimpleRoutingApp {
 
   implicit val system = ActorSystem("kamon-system")
 
-  startServer(interface = "localhost", port = 8080) {
+  startServer(interface = "localhost", port = 8000) {
     path("helloKamon") {
       get {
         complete {
