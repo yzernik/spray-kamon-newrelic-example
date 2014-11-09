@@ -9,18 +9,18 @@ name := "kamon-newrelic-example"
  
 version := "1.0"
  
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
 resolvers += "Kamon repo" at "http://repo.kamon.io"
 
 resolvers += "spray repo" at "http://repo.spray.io"
 
-libraryDependencies += "kamon" %%  "kamon-core" % "0.0.12"
+libraryDependencies += "io.kamon" %%  "kamon-core" % "0.3.2"
 
-libraryDependencies += "kamon" %%  "kamon-spray" % "0.0.12"
+libraryDependencies += "io.kamon" %%  "kamon-spray" % "0.3.2"
 
-libraryDependencies += "kamon" %%  "kamon-newrelic" % "0.0.12"
+libraryDependencies += "io.kamon" %%  "kamon-newrelic" % "0.3.2"
 
-libraryDependencies += "io.spray" %  "spray-can"  % "1.2.0"
+libraryDependencies += "io.spray" %  "spray-can"  % "1.2.2"
 
 javaOptions <++= AspectjKeys.weaverOptions in Aspectj

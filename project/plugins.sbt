@@ -2,7 +2,7 @@ resolvers += "Sonatype snapshots" at "http://oss.sonatype.org/content/repositori
 
 resolvers += "Kamon Releases" at "http://repo.kamon.io"
 
-addSbtPlugin("com.ivantopo.sbt" % "sbt-newrelic" % "0.0.1")
+addSbtPlugin("com.ivantopo.sbt" % "sbt-newrelic" % "0.0.2")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-aspectj" %  "0.9.4")
 
