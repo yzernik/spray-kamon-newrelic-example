@@ -26,6 +26,8 @@ libraryDependencies += "io.kamon" %%  "kamon-newrelic" % "0.3.2"
 
 libraryDependencies += "io.spray" %  "spray-can"  % "1.2.2"
 
+libraryDependencies += "com.newrelic.agent.java" % "newrelic-agent" % "3.5.0"
+
 javaOptions <++= AspectjKeys.weaverOptions in Aspectj
 
 packageArchetype.java_application
