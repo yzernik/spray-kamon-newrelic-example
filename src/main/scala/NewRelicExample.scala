@@ -22,9 +22,10 @@ object NewRelicExample extends App with SimpleRoutingApp {
 
   implicit val system = ActorSystem("kamon-system")
 
+  val interface = "0.0.0.0"
   val port = Properties.envOrElse("PORT", "8080").toInt // for Heroku compatibility
 
-  startServer(interface = "localhost", port = port) {
+  startServer(interface = interface, port = port) {
     path("helloKamon") {
       get {
         complete {
