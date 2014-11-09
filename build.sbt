@@ -3,6 +3,9 @@ import sbt.Keys._
 
 import com.typesafe.sbt.SbtAspectj._
 
+import com.typesafe.sbt.SbtNativePackager._
+import NativePackagerKeys._
+
 aspectjSettings
 
 name := "kamon-newrelic-example"
@@ -24,3 +27,5 @@ libraryDependencies += "io.kamon" %%  "kamon-newrelic" % "0.3.2"
 libraryDependencies += "io.spray" %  "spray-can"  % "1.2.2"
 
 javaOptions <++= AspectjKeys.weaverOptions in Aspectj
+
+packageArchetype.java_application
