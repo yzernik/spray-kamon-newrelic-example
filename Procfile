@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/kamon-newrelic-example -J-javaagent:/target/universal/stage/lib/org.aspectj.aspectjweaver-1.7.4.jar
+web: target/universal/stage/bin/kamon-newrelic-example -J-javaagent:/app/target/universal/stage/lib/org.aspectj.aspectjweaver-1.7.4.jar
