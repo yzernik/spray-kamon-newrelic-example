@@ -16,12 +16,15 @@
 
 import akka.actor.ActorSystem
 import spray.routing.SimpleRoutingApp
+import util.Properties
 
 object NewRelicExample extends App with SimpleRoutingApp {
 
   implicit val system = ActorSystem("kamon-system")
 
-  startServer(interface = "localhost", port = 8000) {
+  val port = Properties.envOrElse("PORT", "8080").toInt // for Heroku compatibility
+
+  startServer(interface = "localhost", port = port) {
     path("helloKamon") {
       get {
         complete {
