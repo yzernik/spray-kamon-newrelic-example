@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/start
+web: target/universal/stage/bin/kamon-newrelic-example
