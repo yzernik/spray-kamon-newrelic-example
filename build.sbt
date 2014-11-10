@@ -21,7 +21,7 @@ resolvers += "spray repo" at "http://repo.spray.io"
 libraryDependencies ++= {
   val akkaV = "2.3.5"
   val sprayV = "1.3.1"
-  val kamonV = "0.3.3"
+  val kamonV = "0.3.4"
   Seq(
     "io.spray"            %%  "spray-can"      % sprayV,
     "io.spray"            %%  "spray-routing"  % sprayV,
