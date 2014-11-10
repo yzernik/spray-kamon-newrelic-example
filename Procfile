@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/kamon-newrelic-example -J-javaagent:/app/target/universal/stage/lib/org.aspectj.aspectjweaver-1.7.4.jar -J-javaagent:target/universal/stage/lib/org.aspectj.aspectjweaver-1.7.4.jar -J-javaagent:target/universal/stage/lib/com.newrelic.agent.java.newrelic-agent-3.11.0.jar
+web: target/universal/stage/bin/kamon-newrelic-example -J-javaagent:target/universal/stage/lib/org.aspectj.aspectjweaver-1.7.4.jar -J-javaagent:target/universal/stage/lib/com.newrelic.agent.java.newrelic-agent-3.11.0.jar NEW_RELIC_APP_NAME="spray-kamon-newrelic-example"
