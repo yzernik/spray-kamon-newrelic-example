@@ -25,6 +25,7 @@ libraryDependencies ++= {
     "io.kamon"            %% "kamon-core"     % kamonV,
     "io.kamon"            %% "kamon-spray"    % kamonV,
     "io.kamon"            %% "kamon-newrelic" % kamonV,
+    "io.kamon"            %% "kamon-log-reporter" % kamonV,
     "org.aspectj"         %  "aspectjweaver"  % "1.8.4",
     "com.newrelic.agent.java" % "newrelic-agent" % "3.11.0"
   )
