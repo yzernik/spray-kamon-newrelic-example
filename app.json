@@ -1,0 +1,13 @@
+{
+  "name": "Spray Kamon Newrelic Example",
+  "description": "A simple Spray app with Kamon metrics reporting to New Relic",
+  "repository": "https://github.com/yzernik/spray-kamon-newrelic-example",
+  "keywords": [
+    "spray",
+    "kamon",
+    "new relic"
+  ],
+  "addons": [
+    "newrelic:wayne"
+  ]
+}
