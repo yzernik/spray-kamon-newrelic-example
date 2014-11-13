@@ -12,14 +12,12 @@ scalaVersion := "2.11.4"
 
 resolvers += "Kamon repo" at "http://repo.kamon.io"
 
-resolvers += "Kamon snapshot repo" at "http://snapshots.kamon.io"
-
 resolvers += "spray repo" at "http://repo.spray.io"
 
 libraryDependencies ++= {
   val akkaV = "2.3.5"
   val sprayV = "1.3.1"
-  val kamonV = "0.3.5-4b884d86c6d30cc49e195a1ff962bd92ad33d010"
+  val kamonV = "0.3.5"
   Seq(
     "io.spray"            %% "spray-can"      % sprayV,
     "io.spray"            %% "spray-routing"  % sprayV,
